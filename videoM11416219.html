@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>永生花技術與應用發展報告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        petal: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                        },
+                        botany: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans TC', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fda4af 0%, #fb7185 50%, #e11d48 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .bento-item {
+            transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .bento-item:hover {
+            transform: translateY(-5px);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header Section -->
+    <header class="relative pt-20 pb-12 px-6 overflow-hidden">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20">
+            <div class="absolute top-[-10%] left-[-10%] w-72 h-72 bg-petal-600 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-rose-900 rounded-full blur-[120px]"></div>
+        </div>
+        
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-petal-400/30 bg-petal-400/10 text-petal-300 text-sm font-medium tracking-wider uppercase animate-pulse-slow">
+                Academic Research Report
+            </div>
+            <h1 class="text-5xl md:text-7xl font-display font-bold mb-6 tracking-tight">
+                <span class="gradient-text">永生花</span>技術與<br/>應用發展
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                結合生物技術與藝術美學，探索從鮮花到「永恆不凋」的科學工藝。
+            </p>
+            <div class="mt-8 text-slate-500 font-display flex justify-center items-center gap-4">
+                <span class="px-3 py-1 bg-slate-800 rounded-md">ID: M11416219</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-24 space-y-16">
+
+        <!-- 1. 置頂：資訊圖表 Section -->
+        <section id="infographic" class="space-y-8">
+            <div class="flex items-center gap-4 mb-2">
+                <div class="h-px flex-1 bg-gradient-to-r from-transparent to-slate-700"></div>
+                <h2 class="text-2xl font-display font-semibold text-petal-300">INFOGRAPHIC</h2>
+                <div class="h-px flex-1 bg-gradient-to-l from-transparent to-slate-700"></div>
+            </div>
+            
+            <div class="glass-card p-4 md:p-8 animate-float">
+                <div class="relative rounded-xl overflow-hidden shadow-2xl border border-white/5">
+                    <img src='https://opal.google/board/blobs/39b811d7-c889-431b-8941-340a220a95ea' alt='永生花資訊圖表' class="w-full h-auto object-cover" />
+                </div>
+                <div class="mt-6 flex flex-wrap gap-4 justify-between items-center text-sm text-slate-400">
+                    <p>● 圖解永生花製作核心流程與環境指標</p>
+                    <span class="italic text-slate-500 font-display uppercase tracking-widest text-xs">Visual Data Insight</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 置中：短影片與摘要 Section -->
+        <section id="visuals" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Video Column -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="glass-card overflow-hidden group">
+                    <div class="p-6 border-b border-white/5 flex justify-between items-center">
+                        <h3 class="font-display font-semibold flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                            PROCESS VISUALIZATION
+                        </h3>
+                        <div class="text-xs text-slate-500 uppercase tracking-tighter">HD 1080P</div>
+                    </div>
+                    <div class="relative aspect-video bg-black">
+                        <video src='https://opal.google/board/blobs/39b48c52-01f1-4633-af68-0b3e7ec3dfa6' class="w-full h-full object-cover" controls autoplay muted loop></video>
+                    </div>
+                    <div class="p-6 bg-botany-800/50">
+                        <div class="flex items-center gap-4">
+                            <div class="flex-1">
+                                <p class="text-sm text-slate-300 italic mb-3">搭配建議音軌：高品質環境背景音樂</p>
+                                <audio src='https://opal.google/board/blobs/0fee68e6-7012-4c43-a21a-1068d709f9bf' controls class="w-full h-10 opacity-80 hover:opacity-100 transition-opacity"></audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Column (Bento Style) -->
+            <div class="lg:col-span-5 grid grid-cols-1 gap-4">
+                <div class="glass-card p-6 bento-item bg-petal-600/10 border-petal-500/20">
+                    <h3 class="text-petal-300 font-bold mb-3 flex items-center gap-2">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        摘要精要
+                    </h3>
+                    <ul class="space-y-3 text-sm leading-relaxed text-slate-300">
+                        <li class="flex gap-2"><span class="text-petal-400">◆</span> <b>定義：</b>以化學置換技術維持鮮花細胞活性的保鮮技術。</li>
+                        <li class="flex gap-2"><span class="text-petal-400">◆</span> <b>技術：</b>液體置換法（脫水、脫色、染色、充填）。</li>
+                        <li class="flex gap-2"><span class="text-petal-400">◆</span> <b>環境：</b>濕度 40%–60%，避光保存。</li>
+                        <li class="flex gap-2"><span class="text-petal-400">◆</span> <b>趨勢：</b>Low VOCs 環保溶劑與感溫變色應用。</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-card p-6 bento-item">
+                    <p class="text-sm text-slate-400 leading-relaxed italic">
+                        "影片展示了從鮮花到化學置換保鮮過程，再到最終精美成品的視覺呈現，精準捕捉了生物科技與藝術的交匯點。"
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 置底：完整報告 Section -->
+        <section id="report" class="space-y-12 pt-16 border-t border-slate-800">
+            <div class="max-w-4xl mx-auto space-y-16">
+                
+                <!-- Section 1 -->
+                <article class="space-y-4">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-4xl font-display font-bold text-petal-600/30">01</span>
+                        <h2 class="text-3xl font-bold text-white">定義與起源</h2>
+                    </div>
+                    <div class="pl-14 text-slate-300 leading-loose text-lg font-light">
+                        永生花（Preserved Flowers），在日本及歐美地區亦常被稱為不凋花或保鮮花，是指採摘正值觀賞巔峰期的鮮花，透過特殊的化學工藝處理後，使植物的組織結構與細胞完整性得以維持。與傳統的乾燥花不同，永生花在質感上保留了鮮花的潤澤感與柔韌性。這種技術最早起源於 1990 年代的法國，隨後在全球市場展現巨大的商業價值。
+                    </div>
+                </article>
+
+                <!-- Section 2: Technical Steps Grid -->
+                <article class="space-y-6">
+                    <div class="flex items-baseline gap-4">
+                        <span class="text-4xl font-display font-bold text-petal-600/30">02</span>
+                        <h2 class="text-3xl font-bold text-white">製作工藝與生化原理</h2>
+                    </div>
+                    <div class="pl-14 grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="p-6 rounded-2xl bg-slate-800/40 border border-white/5">
+                            <div class="w-10 h-10 rounded-full bg-petal-600/20 text-petal-400 flex items-center justify-center mb-4 font-bold">1</div>
+                            <h4 class="font-bold mb-2 text-white">脫水與脫色</h4>
+                            <p class="text-sm text-slate-400">利用乙醇等溶劑滲透壓差移除水分與天然色素，形成半透明白色基底。</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-800/40 border border-white/5">
+                            <div class="w-10 h-10 rounded-full bg-petal-600/20 text-petal-400 flex items-center justify-center mb-4 font-bold">2</div>
+                            <h4 class="font-bold mb-2 text-white">染色與充填</h4>
+                            <p class="text-sm text-slate-400">核心關鍵。注入聚乙二醇(PEG)或甘油以填補空間，並加入無毒染料。</p>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-slate-800/40 border border-white/5">
+                            <div class="w-10 h-10 rounded-full bg-petal-600/20 text-petal-400 flex items-center justify-center mb-4 font-bold">3</div>
+                            <h4 class="font-bold mb-2 text-white">乾燥與固化</h4>
+                            <p class="text-sm text-slate-400">於恆溫恆濕環境陰乾，達成置換液動態平衡，防止滲油褪色。</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Section 3 & 4: Two-column layout -->
+                <div class="pl-14 grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <article class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-8 bg-petal-500 rounded-full"></div>
+                            <h2 class="text-2xl font-bold text-white">保存特性與維護</h2>
+                        </div>
+                        <div class="space-y-3 text-slate-300">
+                            <p>● <b>濕度：</b>理想範圍 40%-60%，過濕會導致「吐液」。</p>
+                            <p>● <b>光線：</b>紫外線是退色主因，應避免陽光直射。</p>
+                            <p>● <b>物理：</b>建議存放於玻璃罩內，避免積塵與碰撞。</p>
+                        </div>
+                    </article>
+
+                    <article class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-2 h-8 bg-petal-500 rounded-full"></div>
+                            <h2 class="text-2xl font-bold text-white">市場趨勢與進展</h2>
+                        </div>
+                        <div class="space-y-3 text-slate-300">
+                            <p>● <b>環保：</b>開發 Low VOCs 生物可降解置換液。</p>
+                            <p>● <b>功能：</b>應用奈米光觸媒技術，具備空氣淨化功能。</p>
+                            <p>● <b>多樣化：</b>技術擴展至牡丹、蘭花及觀葉植物。</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Conclusion -->
+                <article class="p-8 glass-card border-petal-500/20 bg-petal-900/20 mt-8">
+                    <h3 class="text-xl font-bold mb-4 text-petal-200">簡要結論</h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        永生花解決了鮮花觀賞期短暫的痛點。其成功的關鍵在於透過「液體置換法」精確控制植物細胞內的化學成分。隨著環保材料開發及功能化技術的整合，永生花已從單純的工藝品發展為具備高附加價值的科技化花卉產品。
+                    </p>
+                </article>
+
+                <!-- References -->
+                <article class="space-y-4">
+                    <h3 class="text-sm font-display font-semibold text-slate-500 uppercase tracking-widest">Reference Literature</h3>
+                    <ul class="space-y-2 text-xs text-slate-500 border-l border-slate-800 pl-4">
+                        <li>1. Jia, Y., et al. (2022). <i>Optimizing the Preservation Process of Cut Roses...</i> <b>HortScience</b>.</li>
+                        <li>2. Liu, H. & Wang, X. (2023). <i>Development of Eco-friendly Decolorization...</i> <b>Journal of Ag. & Food Chem</b>.</li>
+                        <li>3. 張麗萍 等 (2021). 《永生花生產工藝優化及其品質評價體系建立》。載於《園藝學報》。</li>
+                        <li>4. ISHS. <i>Postharvest Physiology of Preserved Floriculture Products</i> series.</li>
+                        <li>5. U.S. Patent. <i>Methods for Preserving Natural Plants with Low Volatility Compounds</i>.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-12 border-t border-slate-800 text-center">
+            <div class="inline-block py-2 px-6 rounded-full bg-slate-900 border border-slate-800 text-slate-400 text-sm">
+                【主題探索報告】by <span class="italic text-red-600 font-semibold px-1">Kiwi</span>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- Custom Cursor / Decoration -->
+    <div class="fixed top-0 left-0 w-full h-full pointer-events-none -z-20 overflow-hidden">
+        <div class="absolute top-[20%] right-[10%] w-px h-64 bg-gradient-to-b from-transparent via-petal-600/20 to-transparent"></div>
+        <div class="absolute bottom-[30%] left-[5%] w-px h-96 bg-gradient-to-b from-transparent via-petal-600/10 to-transparent"></div>
+    </div>
+
+</body>
+</html>
