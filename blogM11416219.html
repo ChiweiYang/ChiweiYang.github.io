@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025美食八卦報 | 米其林指南大擴張</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#1a1a1a',
+                        'brand-accent': '#c5a059',
+                        'brand-light': '#fdfcf8',
+                        'brand-gray': '#71717a'
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif TC"', 'serif'],
+                        sans: ['"Outfit"', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdfcf8;
+            color: #1a1a1a;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #c5a059 0%, #8d6e35 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #c5a059, transparent);
+            margin: 4rem 0;
+        }
+        ::selection {
+            background: #c5a059;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans">
+
+    <!-- Hero Section -->
+    <header class="relative w-full h-[85vh] overflow-hidden flex items-center justify-center">
+        <div class="absolute inset-0 z-0 scale-105">
+            <img src='https://opal.google/board/blobs/32e2cff9-60a5-446b-961e-30c0d73e2851' alt='media_1' class="w-full h-full object-cover filter brightness-75 transition-transform duration-1000 hover:scale-110" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-brand-light"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl animate-fade-in-up">
+            <span class="inline-block px-4 py-1 mb-6 text-xs tracking-[0.3em] uppercase bg-brand-accent text-white font-semibold rounded-full shadow-lg">
+                Culinary Insights 2025
+            </span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight mb-8 drop-shadow-2xl">
+                米其林指南大擴張！<br/>
+                <span class="text-brand-accent">全台摘星名單</span>與秘密
+            </h1>
+            <div class="flex items-center justify-center space-x-4 text-white/90">
+                <div class="w-12 h-[1px] bg-brand-accent"></div>
+                <p class="font-serif italic text-lg md:text-xl">追尋巷弄間的味覺真理</p>
+                <div class="w-12 h-[1px] bg-brand-accent"></div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+            <div class="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center pt-2">
+                <div class="w-1 h-2 bg-brand-accent rounded-full"></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto px-6 py-16 lg:py-24">
+        
+        <!-- Introduction Section -->
+        <section class="max-w-3xl mx-auto mb-24">
+            <div class="flex flex-col md:flex-row items-start gap-8 mb-12">
+                <div class="text-6xl font-serif text-brand-accent opacity-30 select-none">“</div>
+                <p class="text-xl md:text-2xl font-serif text-brand-dark leading-relaxed italic">
+                    身為一個對生活有著某種偏執、卻又熱愛在巷弄間尋找「味覺真理」的知識份子，我們很難不去注意到那個穿著輪胎、挺著大肚子的白色小人。
+                </p>
+            </div>
+            <p class="text-lg text-brand-gray">
+                每年八月中旬，全台灣的餐飲界就像是在等放榜的高考生，空氣中瀰漫著一種混合了焦慮、期待與權力的張力。2025年的《台灣米其林指南》如約而至，但不一樣的是，這張「美食地圖」的比例尺，被狠狠地拉開了。
+            </p>
+        </section>
+
+        <!-- Bento Grid Feature -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+            <!-- Card 1 -->
+            <div class="md:col-span-8 group relative overflow-hidden rounded-3xl bg-white p-8 lg:p-12 shadow-sm border border-brand-accent/10 transition-all hover:shadow-2xl hover:-translate-y-1">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-8 flex items-center">
+                    <span class="text-brand-accent mr-4">01</span> 
+                    2025 台灣米其林大地圖
+                </h2>
+                <div class="space-y-6 text-brand-gray text-lg">
+                    <p>今年的評選範圍首度擴張到了「7城聯動」。新納入了新北市以及「工程師之城」新竹。新竹的朋友們終於可以摘下「美食沙漠」的帽子，改排星級餐廳的隊了。</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-8">
+                        <div class="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-accent">
+                            <h4 class="font-bold text-brand-dark mb-2">頤宮 (Le Palais)</h4>
+                            <p class="text-sm">寫下令人咋舌的「八連霸」紀錄，餐飲界的政治藝術。</p>
+                        </div>
+                        <div class="bg-brand-light p-6 rounded-2xl border-l-4 border-brand-accent">
+                            <h4 class="font-bold text-brand-dark mb-2">三星神殿</h4>
+                            <p class="text-sm">態芮 (Taïrroir) 與台中的 JL Studio 依然穩坐泰山。</p>
+                        </div>
+                    </div>
+                    <p>真正讓老饕們興奮的是「新同學」。今年有 3 家新晉二星（A, 盈科, 彧割烹）與 8 家新一星（好嶼, 川雅），展現台灣 Fine Dining 的多樣化。</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Trivia -->
+            <div class="md:col-span-4 bg-brand-dark text-white p-8 lg:p-10 rounded-3xl flex flex-col justify-between overflow-hidden relative transition-all hover:shadow-2xl hover:-translate-y-1">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <svg width="120" height="120" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+                </div>
+                <div>
+                    <span class="text-brand-accent font-bold tracking-widest text-xs uppercase mb-4 block">Did you know?</span>
+                    <h2 class="font-serif text-3xl font-bold mb-6">原來是為了賣輪胎？</h2>
+                    <p class="text-white/70 leading-relaxed mb-6">
+                        一百多年前，米其林兄弟為了讓法國人多多開車出門（消耗輪胎），才印製了手冊。
+                    </p>
+                </div>
+                <ul class="space-y-4 border-t border-white/10 pt-6">
+                    <li class="flex items-center space-x-3 text-sm">
+                        <span class="text-brand-accent font-bold">★</span>
+                        <span>一星：剛好路過，別錯過！</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-sm">
+                        <span class="text-brand-accent font-bold">★★</span>
+                        <span>二星：值得你繞點路專程去吃。</span>
+                    </li>
+                    <li class="flex items-center space-x-3 text-sm">
+                        <span class="text-brand-accent font-bold">★★★</span>
+                        <span>三星：出類拔萃，專程飛一趟。</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Cultural Discussion Section -->
+        <section class="max-w-4xl mx-auto py-12">
+            <div class="flex flex-col items-center mb-16">
+                <h3 class="text-brand-accent font-bold tracking-tighter mb-2 italic">Reflections</h3>
+                <h2 class="font-serif text-4xl md:text-5xl font-black text-center mb-6">摘星後的真心話</h2>
+                <div class="w-20 h-1 bg-brand-accent rounded-full"></div>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 items-center mb-20">
+                <div class="flex-1 space-y-6">
+                    <p class="text-lg leading-relaxed text-brand-gray">
+                        站在知識份子的角度，我們必須去反思這套系統。隨著評選城市變多，圈內開始出現「星星通膨」的擔憂——當星星發得越多，它的稀缺價值是否在下降？那些剛拿到一星的餐廳，是否真的具備了與國際接軌的穩定度？
+                    </p>
+                    <div class="p-8 bg-brand-accent/5 border-l-8 border-brand-accent rounded-r-2xl">
+                        <h4 class="font-serif font-bold text-xl mb-3">台南的「文化翻譯」</h4>
+                        <p class="text-brand-gray">對於台南人來說，家巷口那間不用排隊的牛肉湯，可能遠比三顆星更貼近真理。是西方評審的味覺盲點？還是傲氣的小吃不適合「穿著西裝」被評鑑？</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Controversy & Industry Shifts -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start mb-24">
+            <div class="space-y-8">
+                <h2 class="font-serif text-4xl font-bold">「星星」背後的<br/><span class="text-brand-accent">愛恨情仇與枷鎖</span></h2>
+                <p class="text-lg text-brand-gray">
+                    星星並非全然是祝福，有時它更像是一道「枷鎖」。有些日本料理店甚至告上法院拒絕被列入。這種「一旦跌落便萬劫不復」的壓力，足以毀掉一個職人的生活。
+                </p>
+                <div class="glass-card p-8 rounded-3xl border-l-4 border-red-500">
+                    <h3 class="font-serif text-2xl font-bold mb-4">RAW 的謝幕</h3>
+                    <p class="text-brand-gray italic">
+                        江振誠在巔峰撤退，讓我們思考：仰賴極致人力與高昂食材的模式，到底是一種永續的藝術，還是一場華麗的燃燒？
+                    </p>
+                </div>
+            </div>
+            
+            <div class="space-y-12">
+                <div class="group">
+                    <h3 class="font-serif text-2xl font-bold mb-4 group-hover:text-brand-accent transition-colors">下一波吃貨趨勢</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-6">
+                            <span class="text-3xl font-serif text-brand-accent/30 font-bold">01</span>
+                            <div>
+                                <h4 class="font-bold text-brand-dark mb-1">跨界生活風格壟斷</h4>
+                                <p class="text-brand-gray">「米其林鑰匙」評鑑飯店，讓你從睡覺到吃飯都在他們的符號權力下。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="text-3xl font-serif text-brand-accent/30 font-bold">02</span>
+                            <div>
+                                <h4 class="font-bold text-brand-dark mb-1">綠色門檻必修課</h4>
+                                <p class="text-brand-gray">未來不僅僅要「好吃」，廚餘減量、在地溯源將成為基礎門檻。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <span class="text-3xl font-serif text-brand-accent/30 font-bold">03</span>
+                            <div>
+                                <h4 class="font-bold text-brand-dark mb-1">味覺的去中心化</h4>
+                                <p class="text-brand-gray">川菜、客家菜、街頭小吃正打破「法餐優先」的舊思維。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="max-w-4xl mx-auto text-center py-24 px-8 rounded-[4rem] bg-brand-dark text-brand-light relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 pointer-events-none">
+                <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/>
+                        </pattern>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#grid)" />
+                </svg>
+            </div>
+            <div class="relative z-10">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold mb-10 leading-snug">
+                    星星是參考，而胃袋是自己的
+                </h2>
+                <p class="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-12">
+                    當我們在追求那些精緻的擺盤與昂貴的儀式感時，別忘了，食物最初的意義，不過是在一整天的疲憊後，那一口能讓人感受到「活著真好」的一期一會。
+                </p>
+                <div class="flex justify-center gap-6">
+                    <div class="w-12 h-12 rounded-full border border-brand-accent flex items-center justify-center text-brand-accent hover:bg-brand-accent hover:text-white transition-all cursor-pointer">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                    </div>
+                    <div class="w-12 h-12 rounded-full border border-brand-accent flex items-center justify-center text-brand-accent hover:bg-brand-accent hover:text-white transition-all cursor-pointer">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Custom Cursor or Micro-animations could go here if needed -->
+    <script>
+        // Simple Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section, .grid > div').forEach(el => {
+            el.style.opacity = '0';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
